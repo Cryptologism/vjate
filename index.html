@@ -147,25 +147,42 @@
 </script>
 
 
+<!-- Masukkan ini dalam <head> kalau belum ada Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
 <section class="section text-white" id="order" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center mb-5">Tempah COD Sekarang</h2>
-      <form id="codForm" class="row g-3 justify-content-center">
-        <div class="col-md-3">
-          <input type="text" class="form-control" id="codName" placeholder="Nama Penuh" required>
-        </div>
-        <div class="col-md-3">
-          <input type="tel" class="form-control" id="codPhone" placeholder="Nombor Telefon" required>
-        </div>
-        <div class="col-md-4">
-          <input type="text" class="form-control" id="codAddress" placeholder="Alamat Penghantaran" required>
-        </div>
-        <div class="col-12 text-center">
-          <button type="submit" class="btn btn-main mt-4">Hantar ke WhatsApp</button>
-        </div>
-      </form>
+  <div class="container">
+    <h2 class="text-center mb-5">Tempah COD Sekarang</h2>
+    <form id="codForm" class="row g-3 justify-content-center">
+      <div class="col-md-3">
+        <input type="text" class="form-control" id="codName" placeholder="Nama Penuh" required>
+      </div>
+      <div class="col-md-3">
+        <input type="tel" class="form-control" id="codPhone" placeholder="Nombor Telefon" required>
+      </div>
+      <div class="col-md-4">
+        <input type="text" class="form-control" id="codAddress" placeholder="Alamat Penghantaran" required>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-main mt-4">
+          <i class="fab fa-whatsapp me-2"></i>Hantar ke WhatsApp
+        </button>
+      </div>
+    </form>
+
+    <!-- Butang Shopee dan TikTok -->
+    <div class="text-center mt-4">
+      <a href="https://shopee.com.my/dummy-link" target="_blank" class="btn btn-main me-2 mb-2">
+        <i class="fas fa-shopping-bag me-2"></i>Pergi ke Shopee
+      </a>
+      <a href="https://www.tiktok.com/@dummyuser" target="_blank" class="btn btn-main mb-2">
+        <i class="fab fa-tiktok me-2"></i>Pergi ke TikTok
+      </a>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <footer>
     <small>© 2025 Vjate Spray. Semua Hak Dilindungi. Direka khas untuk keselesaan lelaki moden.</small>
@@ -228,8 +245,18 @@
     // Live Sales Notification
     const salesMessages = [
       "Ali dari Johor baru sahaja membuat tempahan!",
+      "Ali dari Johor baru sahaja membuat tempahan!",
       "Siti dari KL baru checkout 2 unit!",
-      "Ahmad dari Melaka buat COD sekarang!"
+      "Ahmad dari Melaka buat COD sekarang!",
+      "Zul dari Terengganu baru order Vjate Spray!",
+      "Hasan dari Penang beli 3 botol sekaligus!",
+      "Rahim dari Sabah guna Shopee untuk order sekarang!",
+      "Fadhil dari Seremban baru buat bayaran COD!",
+      "Din dari Kuantan ambil promosi combo hari ni!",
+      "Azmi dari Perlis order semalam, hari ni dah sampai!",
+      "Shahrul dari Klang baru je checkout guna WhatsApp!",
+      "Wan dari Kelantan grab offer diskaun sebelum tamat!",
+      "Hakim dari Pahang sedang buat pembayaran sekarang!"
     ];
     function showSalesPopup() {
       const popup = document.getElementById("live-sales");
